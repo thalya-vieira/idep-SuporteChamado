@@ -131,3 +131,82 @@ body {
   padding-top: 10px;
   margin-top: 4px;
 }
+
+/* ==========================================================================
+   ESTILOS DO COMPONENTE RESUMO DE MÉTRICAS
+   ========================================================================== */
+
+/* Container que organiza os 3 cartões lado a lado */
+.metricas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Estilo base de cada cartão */
+.metrica-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 4px solid #6b7280; /* Borda padrão */
+}
+
+/* Cores específicas da borda esquerda de cada cartão */
+.card-total {
+  border-left-color: #2563eb; /* Azul */
+}
+
+.card-abertos {
+  border-left-color: #d97706; /* Amarelo/Laranja */
+}
+
+.card-concluidos {
+  border-left-color: #16a34a; /* Verde */
+}
+
+/* Texto da legenda */
+.metrica-titulo {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Número em destaque */
+.metrica-valor {
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+/* Botão de Alterar Status no Cartão */
+.btn-status {
+  margin-top: 8px;
+  background-color: #e5e7eb;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-status:hover {
+  background-color: #d1d5db;
+}
+
+/* Status adicionais para renderização condicional */
+.status-em-andamento {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-concluído,
+.status-concluido {
+  background-color: #dcfce7;
+  color: #15803d;
+}
