@@ -16,8 +16,8 @@ export default function Login({ onLoginSucesso }) {
 
     // Escolhe a rota de Login ou de Cadastro na API
     const url = modoCadastro
-      ? 'https://idep-suportechamado.onrender.com/api/auth/cadastrar'
-      : 'https://idep-suportechamado.onrender.com/api/auth/login';
+      ? "https://idep-suportechamado.onrender.com/api/auth/cadastrar"
+      : "https://idep-suportechamado.onrender.com/api/auth/login";
 
     const corpo = modoCadastro
       ? { nome, email, senha }
