@@ -5,7 +5,7 @@ import ResumoMetricas from './components/ResumoMetricas';
 import FormularioChamado from './components/FormularioChamado';
 import FiltroChamados from './components/FiltroChamados';
 import ChamadoCard from './components/ChamadoCard';
-import Login from './components/Login'; // Importamos o Login
+import Login from './components/login.jsx'; // Importamos o Login
 import './App.css';
 
 export default function App() {
